@@ -38,8 +38,8 @@ public class UserRegister {
 	@Test
 	public void givenPassword_isProper() throws InvalidException {
 		UserRegister register = new UserRegister();
-		String actual = register.password("vAvc3@ttaay");
-		Assert.assertEquals("vAvc3@ttaay", actual);
+		String actual = register.password("hHdf3@ghrlw");
+		Assert.assertEquals("hHdf3@ghrlw", actual);
 	}
 
 }
