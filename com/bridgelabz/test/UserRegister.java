@@ -56,11 +56,11 @@ public class UserRegister {
 		return emailId;
     }
 	
-	public String phoneNumber(String phoneNumber) throws InvalidException{	
+	public String phoneNumber(String phonenumber) throws InvalidException{	
 		Pattern pattern = Pattern.compile("^(\\d{1,2}?)[- .]?\\d{9,10}$");
-		Matcher match = pattern.matcher(phoneNumber);
+		Matcher match = pattern.matcher(phonenumber);
 		try {
-			if(match.find() && match.group().equals(phoneNumber)) {
+			if(match.find() && match.group().equals(phonenumber)) {
 				System.out.println("Entered phoneNumber is valid\n");	
 			}
 			else {
@@ -70,7 +70,7 @@ public class UserRegister {
 		catch(InvalidException e) {
 			System.out.println("Exception occured :" + e);
 		}
-		return phoneNumber;
+		return phonenumber;
 	}
 	
 	public String password(String password) throws InvalidException{
