@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import com.bridgelabz.test.InvalidException;
 
-public class UserRegister {
+public class UserRegisterTest {
 	
 	@Test
 	public void givenFirstName_isProper() throws InvalidException {
