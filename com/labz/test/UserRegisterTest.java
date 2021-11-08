@@ -19,5 +19,11 @@ public class UserRegisterTest {
 		String actual = register.lastName("Yadav");
 		Assert.assertEquals("Yadav", actual);
 	}
+	@Test
+	public void givenEmailId_isProper() {
+		UserRegister register = new UserRegister();
+		String actual = register.emailId("ry219613@gmail.com");
+		Assert.assertEquals("ry219613@gmail.com", actual);
+	}
 
 }
